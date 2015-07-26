@@ -8,6 +8,8 @@
 - ddp "REST for websockets"
 - reactive rendering with blaze
 - cordova mobile builds
+- atmosphere packages win
+
 ---
 
 # architecture
@@ -23,20 +25,17 @@
 
 ---
 
-# run
+# create & run
 
+- `$ meteor create leproject`
 - `$ meteor`
 
-
 ---
-
 
 # routes
 
 ```js
     var yolo = asdf;
 ```
-
-
 
 ---
