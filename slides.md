@@ -39,3 +39,10 @@
 ```
 
 ---
+
+- routing
+- model
+- concat
+- views
+- seo page rendering
+- oauth
