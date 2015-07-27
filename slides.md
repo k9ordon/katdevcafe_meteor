@@ -147,12 +147,28 @@ Router.route('/', function () {
 `$ meteor add accounts-ui accounts-password`
 
 - fast way: `{{> loginButtons}}`
+- {{#if currentUser}}
 
 
 ***
 
+## user relation
+
+#### add message
+
+`user_id: Meteor.userId()`
+
+#### get message
+
+`msgs.map => msg.user = Meteor.users.findOne({_id: msg.user_id})`
+
+***
+
 ## oauth
+
 `$ meteor add accounts-facebook`
+
+- Meteor.loginWithFacebook()
 
 ***
 
@@ -160,5 +176,7 @@ Router.route('/', function () {
 
 `$ meteor add spiderable`
 > uses the [AJAX Crawling](https://developers.google.com/webmasters/ajax-crawling/docs/learn-more) specification published by Google to serve HTML to compatible spiders (Google, Bing, Yandex, and more).
+
+=> `?_escaped_fragment_=`
 
 ***

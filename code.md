@@ -37,19 +37,12 @@ if (Meteor.isClient) {
 
 
 
-## mongo input
+## read insert
 
 <template name="addform">
     <form>
         <input id="text"><button>go</button>
     </form>
-</template>
-
-<template name="history">
-    History:
-    {{#each messages}}
-        <li>{{text}}</li>
-    {{/each}}
 </template>
 
 
@@ -64,29 +57,110 @@ Template.addform.events({
 });
 
 
+
 Template.addform.events({
   'submit form': function (e) {
       e.preventDefault();
-      Messages.insert({text: $('input').val()});
+      Messages.insert({
+          data: new Date(),
+          text: $('input').val()
+      });
       $('input').val('');
   }
 });
 
 
-```
 
-***
 
-##
+<template name="history">
+    History:
+    {{#each messages}}
+        <li>{{text}}</li>
+    {{/each}}
+</template>
 
-```js
+Template.history.helpers({
+  messages: function () {
+    return Messages.find({});
+  }
+});
 
-```
+Messages.find({}, {limit: 2, sort: {date: -1}})
 
-***
 
-##
 
-```js
 
-```
+
+
+
+
+## routes
+
+
+Router.route('/', function () {
+  this.render('Home');
+});
+
+Router.route('/messages', function () {
+  this.render('Messages');
+});
+
+<template name="messages">
+      {{> history}}
+      {{> addform}}
+</template>
+
+
+
+<template name="layout">
+  <header>
+    <h1>yo</h1>
+    <a href="/">yolo</a>
+    <a href="/messages">messages</a>
+  </header>
+  <div>
+    {{> yield}}
+    </div>
+</template>
+
+Router.configure({
+  layoutTemplate: 'layout'
+});
+
+
+
+
+
+
+
+# map
+
+messages: function () {
+  return Messages.find({}).map(function(message) {
+      message.user = Meteor.users.findOne({_id: message.user_id});
+      return message;
+  });
+}
+
+
+
+
+# oauth
+
+https://developers.facebook.com/apps/888486161228394/dashboard/
+888486161228394
+46fa76e2e980a0c11493528eb68145a0
+
+
+
+# animation
+
+timmyg:wow
+
+if (Meteor.isClient) {
+    Template.messages.rendered = function () {
+        new WOW().init()
+    };
+}
+
+wow flipInX
