@@ -70,22 +70,25 @@
 
 ## load order
 
-- deepest directory
-- 'lib' directory
-- sorted by filename
+- deepest
+- `lib`
+- by filename
+- `main.*` last
+
+[docs.meteor.com](http://docs.meteor.com/#/full/structuringyourapp)
 
 ***
 
-## templates
+## views
 
-- [blaze](https://www.meteor.com/blaze) template engine
-- [spacebars](https://atmospherejs.com/meteor/spacebars) language _inspired by handlebars_
+- [blaze](https://www.meteor.com/blaze) engine
+- [spacebars](https://atmospherejs.com/meteor/spacebars) template language
 - simple - no logic in templates
 - compile to js
 
 ***
 
-## ui interaction
+## 👉 ui interaction
 - helpers
 - events
 
@@ -127,6 +130,8 @@ coffeescript, sass, ...
 > A: remove the insecure package
 
 - publish & subscribe
+- methods
+- allow/deny
 
 ***
 
@@ -164,7 +169,7 @@ Router.route('/', function () {
 
 ***
 
-## oauth
+## oauth 😱
 
 `$ meteor add accounts-facebook`
 
@@ -172,11 +177,17 @@ Router.route('/', function () {
 
 ***
 
-## seo ...
+## seo ... 😡
 
 `$ meteor add spiderable`
 > uses the [AJAX Crawling](https://developers.google.com/webmasters/ajax-crawling/docs/learn-more) specification published by Google to serve HTML to compatible spiders (Google, Bing, Yandex, and more).
 
 => `?_escaped_fragment_=`
+
+***
+
+# the end
+
+# 🚬
 
 ***
