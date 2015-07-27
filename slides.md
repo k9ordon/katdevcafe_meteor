@@ -24,6 +24,7 @@
 - painless mobile builds
 - blaze - reactive template rendering
 - [atmosphere](http://atmospherejs.com)
+- core [supports](http://stackoverflow.com/questions/10127211/what-web-browsers-are-supported-by-meteor-web-framework) ie6+
 
 ***
 
