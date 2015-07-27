@@ -5,7 +5,7 @@
 
 ***
 
-# what is meteor.js
+## what is meteor.js
 
 - fullstack javascript app framework 💪
 - easy learning + [good documentation](https://www.meteor.com/install)
@@ -16,7 +16,7 @@
 
 
 
-# what is inside
+## what is inside
 
 - pure javascript 😻😻😍
 - [ddp](https://www.meteor.com/ddp) "rest for websockets"
@@ -27,13 +27,13 @@
 
 ***
 
-# architecture
+## architecture
 
 ![](assets/meteor-platform.png)
 
 ***
 
-# install
+## install
 
 - ```$ curl https://install.meteor.com/ | sh```
 - then we haz `$ meteor`
@@ -42,7 +42,7 @@
 
 ***
 
-# create & run 🏃
+## create & run 🏃
 
 - `$ meteor create leproject`
 - `$ meteor`
@@ -57,7 +57,7 @@
 
 ***
 
-# app structure
+## app structure
 
 - `client`
 - `server`
@@ -69,7 +69,7 @@
 
 ***
 
-# load order
+## load order
 
 - deepest directory
 - 'lib' directory
@@ -77,7 +77,7 @@
 
 ***
 
-# templates
+## templates
 
 - [spacebars](https://atmospherejs.com/meteor/spacebars) inspired by handlebars
 - simple - no logic in templates
@@ -85,13 +85,13 @@
 
 ***
 
-# ui interaction
+## ui interaction
 - helpers
 - events
 
 ***
 
-# collections
+## collections
 
 ```js
 Yo = new Mongo.Collection('yos');
@@ -103,7 +103,7 @@ Yo = new Mongo.Collection('yos');
 
 ***
 
-# security
+## security
 
 > Q: how to make meteor secure?
 
@@ -113,7 +113,7 @@ Yo = new Mongo.Collection('yos');
 
 ***
 
-# mvc with [iron:router](https://github.com/iron-meteor/iron-router)
+## mvc with [iron:router](https://github.com/iron-meteor/iron-router)
 
 `$ meteor add iron:router`
 
@@ -125,7 +125,7 @@ Router.route('/', function () {
 
 ***
 
-# ideas
+## ideas
 
 - routing
 - model
@@ -133,7 +133,3 @@ Router.route('/', function () {
 - views
 - seo page rendering
 - oauth
-
-
-- http://de.slideshare.net/scandiweb/meteor-presentation-42641921
-- https://channikhabra.github.io/jschannel-meteor-talk/#/1
