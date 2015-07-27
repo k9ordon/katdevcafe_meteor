@@ -1,7 +1,7 @@
 
 ***
 
-# meteor.js
+![meteor.js](assets/meteor.jpg)
 
 ***
 
@@ -52,7 +52,7 @@
 - minified & concatenated client
 - nodejs server
 - mongodb
-- awsome dev enviroment
+- awsome dev enviroment (hot code push)
 - [localhost:3000](http://localhost:3000)
 
 ***
@@ -79,7 +79,8 @@
 
 ## templates
 
-- [spacebars](https://atmospherejs.com/meteor/spacebars) inspired by handlebars
+- [blaze](https://www.meteor.com/blaze) template engine
+- [spacebars](https://atmospherejs.com/meteor/spacebars) language _inspired by handlebars_
 - simple - no logic in templates
 - compile to js
 
@@ -91,13 +92,25 @@
 
 ***
 
+## less
+
+`$ meteor add less`
+
+coffeescript, sass, ...
+
+***
+
+## deploy 😳
+
+`$ meteor deploy yoloyolo1`
+
+***
+
 ## collections
 
-```js
-Yo = new Mongo.Collection('yos');
-```
+`Yo = new Mongo.Collection('yos');`
 
-- insert|update|remove client & server
+- `insert`,`update`&`remove` from client & server
 - optimistic ui with minimongo
 - autopublish & insecure default
 
@@ -113,7 +126,7 @@ Yo = new Mongo.Collection('yos');
 
 ***
 
-## mvc with [iron:router](https://github.com/iron-meteor/iron-router)
+## mvc with:  [iron:router](https://github.com/iron-meteor/iron-router) ✨
 
 `$ meteor add iron:router`
 
@@ -125,11 +138,23 @@ Router.route('/', function () {
 
 ***
 
-## ideas
+## users accounts
 
-- routing
-- model
-- concat
-- views
-- seo page rendering
-- oauth
+`$ meteor add accounts-ui accounts-password`
+
+- fast way: `{{> loginButtons}}`
+
+
+***
+
+## oauth
+`$ meteor add accounts-facebook`
+
+***
+
+## seo ...
+
+`$ meteor add spiderable`
+> uses the [AJAX Crawling](https://developers.google.com/webmasters/ajax-crawling/docs/learn-more) specification published by Google to serve HTML to compatible spiders (Google, Bing, Yandex, and more).
+
+***
