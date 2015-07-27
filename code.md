@@ -94,6 +94,11 @@ Messages.find({}, {limit: 2, sort: {date: -1}})
 
 
 
+
+
+
+
+
 ## routes
 
 
@@ -133,6 +138,11 @@ Router.configure({
 
 
 
+
+
+
+
+
 # map
 
 messages: function () {
@@ -145,11 +155,30 @@ messages: function () {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 # oauth
 
 https://developers.facebook.com/apps/888486161228394/dashboard/
 888486161228394
 46fa76e2e980a0c11493528eb68145a0
+
+
+
+
+
+
+
+
 
 
 
@@ -164,3 +193,19 @@ if (Meteor.isClient) {
 }
 
 wow flipInX
+
+
+
+
+
+
+
+.markdown-preview hr {
+    height:70%;
+    //background:rgba(255,255,255,0.5);
+}
+
+.markdown-preview h1, .markdown-preview[data-use-github-style] h1, .markdown-preview h2, .markdown-preview[data-use-github-style] h2, .markdown-preview h3, .markdown-preview[data-use-github-style] h3, .markdown-preview h4, .markdown-preview[data-use-github-style] h4, .markdown-preview h5, .markdown-preview[data-use-github-style] h5, .markdown-preview h6, .markdown-preview[data-use-github-style] h6 {
+    font-weight: normal;
+    border-color:transparent;
+}
