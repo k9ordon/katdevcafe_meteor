@@ -8,7 +8,7 @@
 ## what is meteor.js
 
 - fullstack javascript app framework 💪
-- easy learning + [good documentation](https://www.meteor.com/install)
+- [good documentation](https://www.meteor.com/install)
 - rapid prototyping (insecure first)
 - realtime default
 
@@ -110,6 +110,16 @@ coffeescript, sass, ...
 `$ meteor deploy yoloyolo1`
 
 (soon) meteor in the [galaxy](http://techcrunch.com/2015/05/19/meteor-raises-20m-to-build-the-one-javascript-stack-to-rule-them-all/#.ii0ymm:uQ6F)
+
+***
+
+## ios
+
+- `$ meteor add-platform ios`
+- `$ meteor run ios`
+- `$ meteor run ios-device`
+
+xcode nd stuff: ["running on mobile"](https://www.meteor.com/tutorials/blaze/running-on-mobile)
 
 ***
 
