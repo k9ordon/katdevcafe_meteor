@@ -20,10 +20,10 @@
 
 - pure javascript 😻😻😍
 - [ddp](https://www.meteor.com/ddp) "rest for websockets"
-- reactive rendering
 - mongodb [livequery](https://www.meteor.com/livequery)
-- painless cordova mobile builds
-- pages atmosphere
+- painless mobile builds
+- blaze - reactive template rendering
+- [atmosphere](http://atmospherejs.com)
 
 ***
 
@@ -49,11 +49,10 @@
 
 =>
 
-- minified & concatenated client
 - nodejs server
 - mongodb
 - awsome dev enviroment (hot code push)
-- [localhost:3000](http://localhost:3000)
+- minified & concatenated [client](http://localhost:3000)
 
 ***
 
@@ -96,6 +95,9 @@
 
 `$ meteor add less`
 
+- sourcemap support
+- watcher
+
 coffeescript, sass, ...
 
 ***
@@ -103,6 +105,8 @@ coffeescript, sass, ...
 ## deploy 😳
 
 `$ meteor deploy yoloyolo1`
+
+(soon) meteor in the [galaxy](http://techcrunch.com/2015/05/19/meteor-raises-20m-to-build-the-one-javascript-stack-to-rule-them-all/#.ii0ymm:uQ6F)
 
 ***
 
