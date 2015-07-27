@@ -40,9 +40,14 @@
 
 ---
 
+# ideas
+
 - routing
 - model
 - concat
 - views
 - seo page rendering
 - oauth
+
+
+- http://de.slideshare.net/scandiweb/meteor-presentation-42641921
